@@ -43,7 +43,12 @@ INSTALLED_APPS = [
     # local
     'users.apps.UsersConfig',
     'pages.apps.PagesConfig',
+
+    # third party
+    'crispy_forms',
 ]
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 AUTH_USER_MODEL = 'users.CustomUser'
 
