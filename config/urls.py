@@ -21,7 +21,9 @@ urlpatterns = [
     path('accounts/', include('django.contrib.auth.urls')),
     path('admin/', admin.site.urls),
 
+    # third party
+    path('accounts/login/', include('allauth.urls')),
+
     # local
-    path('accounts/', include('users.urls')),
     path('', include('pages.urls')),
 ]
